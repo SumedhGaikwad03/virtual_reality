@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Enquiry - Virtual Reality</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-50 text-gray-800">
+  <!-- ✅ Navbar Component -->
+<nav class="bg-blue-900 text-white shadow-lg sticky top-0 z-50">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex items-center justify-between h-16">
+
+      <!-- Left: Logo + Tagline -->
+      <div class="flex items-center space-x-3">
+        <div class="bg-white text-blue-900 font-bold px-3 py-1 rounded-lg">VR</div>
+        <div>
+          <span class="font-bold text-lg">Virtual Reality</span>
+          <p class="text-xs text-blue-200">Home • Happiness • Honesty</p>
+        </div>
+      </div>
+
+      <!-- Spacer pushes links to the right -->
+      <div class="flex-1"></div>
+
+      <!-- Right: Desktop Links -->
+      <div class="hidden md:flex space-x-6">
+        <a href="index.html" class="hover:text-blue-300">Home</a>
+        <a href="about.html" class="hover:text-blue-300">About</a>
+        <a href="enquiry.html" class="hover:text-blue-300">Enquiry</a>
+      
+        <a href="terms.html" class="hover:text-blue-300">Terms and Conditions</a>
+      </div>
+
+      <!-- Right: Email placeholder (blank for now) -->
+      <div class="hidden md:block">
+        <p class="text-sm italic text-blue-200"></p>
+      </div>
+
+      <!-- Mobile Menu Button -->
+      <div class="md:hidden">
+        <button id="menu-btn" class="focus:outline-none">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Mobile Links -->
+  <div id="mobile-menu" class="hidden md:hidden bg-blue-800 px-4 py-3 space-y-2">
+    <a href="index.html" class="block hover:text-blue-300">Home</a>
+    <a href="about.html" class="block hover:text-blue-300">About</a>
+    <a href="enquiry.html" class="block hover:text-blue-300">Enquiry</a>
+    
+    <a href="terms.html" class="block hover:text-blue-300">Terms and Conditions</a>
+  </div>
+</nav>
+
+<script>
+  // Toggle mobile menu
+  const btn = document.getElementById("menu-btn");
+  const menu = document.getElementById("mobile-menu");
+  btn.addEventListener("click", () => {
+    menu.classList.toggle("hidden");
+  });
+</script>
+
+
+  <!-- Header -->
+  <header class="bg-gradient-to-r from-blue-600 to-blue-800 text-white p-4 flex justify-between items-center shadow-md">
+    <h1 class="text-2xl font-bold">Virtual Reality</h1>
+    <a href="index.html" class="hover:underline">🏠 Back to Home</a>
+  </header>
+
+
+  <!-- Enquiry Section -->
+  <section class="p-8 max-w-4xl mx-auto bg-white rounded-lg shadow-lg mt-6">
+    <h2 class="text-3xl font-bold text-blue-700 mb-4">Make an Enquiry</h2>
+    <p class="mb-6">Please fill out the form below and our team will get back to you shortly.</p>
+
+    <!-- Google Form Embed -->
+    <div class="w-full h-[600px] border rounded-lg overflow-hidden shadow-md mb-10">
+      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScBsndGni5HyPsCQsi5tFblUsqvB48QrxsWGe6cXUjXxpjuSw/viewform?embedded=true" 
+ width="100%" height="100%" frameborder="0" marginheight="0"
+        marginwidth="0">
+        Loading…
+      </iframe>
+    </div>
+    
+    <!-- Location Section -->
+    <h3 class="text-2xl font-semibold text-gray-800 mb-4">Our Location</h3>
+
+
+<!-- Google Map Embed -->
+<div class="w-full h-96 mb-6 border rounded-lg overflow-hidden shadow-md">
+  <iframe
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1890.3859599753205!2d73.8057389481872!3d18.629325738519288!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2b990f4fa8c45%3A0xdce2519fe5354059!2sMspace%20mall!5e0!3m2!1sen!2sin!4v1755506920961!5m2!1sen!2sin"
+    class="w-full h-full"
+    style="border:0;"
+    allowfullscreen=""
+    loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade">
+  </iframe>
+</div>
+
+
+    <!-- Address -->
+    <p class="text-lg text-gray-700 font-medium">
+      📍 <strong>Our Office Address:</strong><br>
+      Office No. 202, 2nd Floor, Mspace Mall, Near Mahindra Antheia, Pimpri, Pune - 411018
+    </p>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gradient-to-r from-blue-600 to-blue-800 text-white text-center p-4 mt-6">
+    <p>&copy; 2025 Virtual Reality. All Rights Reserved.</p>
+  </footer>
+
+</body>
+
+</html>
